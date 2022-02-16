@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id "androidx.navigation.safeargs.kotlin"
 }
 
 android {
@@ -53,6 +54,8 @@ dependencies {
 
     def arch_version = '2.1.0'
 
+    implementation "androidx.navigation:navigation-fragment-ktx:2.3.4"
+    implementation "androidx.navigation:navigation-ui-ktx:2.3.4"
 // ViewModel
 
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"

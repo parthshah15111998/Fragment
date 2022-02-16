@@ -1,5 +1,6 @@
 package com.example.fragment
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val navigationView:NavigationView=findViewById<NavigationView>(R.id.nav_view)
 
         toggle = ActionBarDrawerToggle(this,drawerLayout,R.string.Open,R.string.close)
-        drawerLayout.addDrawerListener(toggle)
+        binding.drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -66,5 +67,4 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-
 }
