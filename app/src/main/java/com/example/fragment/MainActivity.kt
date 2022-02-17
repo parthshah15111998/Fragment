@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val navigationView:NavigationView=findViewById<NavigationView>(R.id.nav_view)
 
         toggle = ActionBarDrawerToggle(this,drawerLayout,R.string.Open,R.string.close)
-        binding.drawerLayout.addDrawerListener(toggle)
+        drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
